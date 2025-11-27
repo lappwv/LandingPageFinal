@@ -1,17 +1,13 @@
-// La función que maneja la lógica de inicio de sesión
+// Función que maneja el login
 function validarLogin(event) {
-  // Previene el envío del formulario por defecto (evita la recarga)
-  event.preventDefault();
+  event.preventDefault(); // evita recarga de la página
 
-  // Clave estática para la demo
   const CLAVE_SECRETA = "ok";
   const passwordInput = document.getElementById("password").value;
 
-  // 2. Realizar la verificación
   if (passwordInput.toLowerCase() === CLAVE_SECRETA) {
     alert("¡Acceso concedido! Bienvenido.");
-    // Redirige a tu página principal
-    window.location.href = "LP.html";
+    window.location.href = "landingpage.html"; // ← tu redirección correcta
   } else {
     alert("Clave incorrecta. Inténtalo de nuevo.");
     document.getElementById("password").value = "";
