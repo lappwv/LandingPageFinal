@@ -493,11 +493,6 @@ h1 {
     text-align: center;
   }
 
-  .Menu-Horizontal {
-    justify-content: center;
-    gap: 1rem;
-  }
-
   iframe {
     width: 100%;
     max-width: 100% !important;
@@ -518,10 +513,6 @@ h1 {
     padding: 1rem;
   }
 
-  .Menu-Horizontal {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 
   .Menu-Vertical {
     position: relative;
@@ -596,9 +587,6 @@ h1 {
 
 @media (max-width: 992px) {
   /* Oculta todo el menú horizontal */
-  .Menu-Horizontal {
-    display: none !important;
-  }
 
   /* Ajusta el navbar solo con logo + texto */
   .topheader {
@@ -625,9 +613,6 @@ h1 {
 
 @media (max-width: 768px) {
   /* Mantener oculto el menú en móvil también */
-  .Menu-Horizontal {
-    display: none !important;
-  }
 
   /* Logo más chico para móvil */
   .logo img {
@@ -686,15 +671,7 @@ html {
     color: black;
   }
 
-  .Menu-Horizontal {
-    display: none; /* Ocultar menú horizontal por defecto */
-    flex-direction: column; /* Mostrarlo en vertical al activarse */
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    top: 5rem; /* Debajo del menú fijo */
-    left: 0;
-  }
+
 
   .Menu-Horizontal.active {
     display: flex; /* Mostrar menú al activar la clase */

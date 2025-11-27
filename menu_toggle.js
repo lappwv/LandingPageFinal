@@ -1,3 +1,5 @@
+console.log("JS cargado correctamente");
+
 // Selecciona el botón de hamburguesa
 const btn = document.querySelector(".menu-toggle");
 
